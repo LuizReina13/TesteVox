@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Teste Marcelo - Voxcity</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<script>
+    function funcao1()
+    {
+       
+        var inputemail = document.getElementById("exampleInputEmail1").value;
+        var inputsenha = document.getElementById("exampleInputPassword1").value;
+
+        var caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+        var stringAleatoriapt1 = '';
+        for (var i = 0; i < 4; i++) {
+            stringAleatoriapt1 += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+        }
+
+        var stringAleatoriapt2 = '';
+        for (var i = 0; i < 4; i++) {
+            stringAleatoriapt2 += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+        }
+
+        var stringAleatoriapt3 = '';
+        for (var i = 0; i < 4; i++) {
+            stringAleatoriapt3 += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+        }
+
+        var stringAleatoriapt4 = '';
+        for (var i = 0; i < 4; i++) {
+            stringAleatoriapt4 += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+        }
+        
+        var chave = stringAleatoriapt1 + "-" + stringAleatoriapt2 + "-" + stringAleatoriapt3 + "-" + stringAleatoriapt4;
+        alert("Esta é a chave: " + chave + "\n" + "Email: " + inputemail + "\n" + "Senha: " + inputsenha);
+
+    }
+</script>
+
+<style>
+    body {
+    margin-left: 30px;
+    }
+</style>
+
+<body>
+
+    <form>
+        <div class="form-group" class="mx-auto" style="width: 350px;">
+          <label for="exampleInputEmail1">Endereço de email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+        </div>
+        <div class="form-group" class="mx-auto" style="width: 350px;">
+          <label for="exampleInputPassword1" >Senha</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+        </div>
+        <button onclick="funcao1()" type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+      
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
